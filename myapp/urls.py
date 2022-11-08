@@ -23,6 +23,8 @@ urlpatterns = [
     
     #My Path
     path('meme/', include('meme.urls')),
+    path('about/', include('about.urls')),
+    path('contact/', include('contact.urls')),
 ]
 
 if settings.DEBUG:
