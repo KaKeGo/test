@@ -16,5 +16,5 @@ def contact_list_view(request):
     contact = Contact.objects.all()
     if not contact.exists:
         return Response({'message': 'Somethin went wrong'})
-    serializer = ContactSerializer(contact, mant=True)
+    serializer = ContactSerializer(contact, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
