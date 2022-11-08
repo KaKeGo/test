@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     
     #My Apps
     'meme',
+    'about',
+    'contact',
     
     #Other apps
     'rest_framework',
