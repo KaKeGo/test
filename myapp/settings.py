@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     #Other apps
     'rest_framework',
     'corsheaders',
+    'django_on_heroku',
 ]
 
 MIDDLEWARE = [
@@ -101,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.pashesword_validation.MinimumLengthValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -129,7 +130,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "https://kakeback.herokuapp.com/"
+    "https://kakeback.herokuapp.com"
 ]
 
 DEFAULT_RENDERER_CLASSES = [
